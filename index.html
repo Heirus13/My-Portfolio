@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="icon" href="images/myportfolio.png" type="image/png"> <!-- Favicon -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <nav class="navT" id="navbar">
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero" style="overflow: hidden;">
+        <div class="hero-container">
+            <main class="container">
+                <h1 class="name"><span>Johnlloyd</span> <span class="highlight">Justiniane</span></h1>
+                <div class="aspiring-container">
+                    <p class="aspiring">An Aspiring</p>
+                    <div class="console-container">
+                        <span id="text"></span>
+                        <div class="console-l" id="console">|</div>
+                    </div>
+                </div>                
+            </main>
+        </div>
+        <div class="home-icon">
+            <a href="https://www.facebook.com/johnlloydjustiniane13" target="_blank" class="home-icon-link" aria-label="Facebook Profile">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/johnlloyd-justiniane-b936a4344/" target="_blank" class="home-icon-link" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:johnlloydjustiniane13@gmail.com" class="home-icon-link" aria-label="Email Johnlloyd">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <div class="welcome-image-wrapper">
+            <div class="circle-container">
+                <div class="welcome-image">
+                    <video autoplay muted loop>
+                        <source src="images/cat.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <div id="about" class="about">
+        <h1 class="about-title slide-in-left">About <span class="about-highlight">Me</span></h1>    
+        <div class="about-container fade-in">
+            <div class="about-text" id="about-content">
+                <div class="button-container fade-in" style="text-align: center; margin-bottom: 20px;">
+                    <a href="javascript:void(0);" class="btn" id="about-me-btn" onclick="showAboutMe()">
+                        <i class="bi bi-person"></i>
+                        About Me
+                    </a>
+                    <a href="javascript:void(0);" class="btn" id="education-bg-btn" onclick="showEducation()">
+                        <i class="bi bi-book"></i>
+                        Education Background
+                    </a>
+                    <a href="javascript:void(0);" class="btn" id="contact-btn" onclick="showContact()">
+                        <i class="bi bi-envelope"></i>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about-me-content" style="text-align: center; margin-top: 20px;">
+            <div class="paragraph-container slide-in-left" style="margin: 0 auto;">
+                <h2>Who I Am?</h2>
+                <p>I'm an aspiring full-stack web developer with a passion for creating dynamic and responsive web applications. 
+                I enjoy coding and continuously learning new technologies to enhance my skills. 
+                My goal is to build applications that provide a seamless user experience. 
+                I thrive on challenges and love problem-solving, which drives my desire to contribute to impactful projects. 
+                I believe in the power of collaboration and aim to work in environments that foster creativity and innovation. 
+                As I progress in my career, I am eager to explore new frameworks and tools that can improve my workflow and the quality of my work.
+                </p>
+                <a href="pdf/Justiniane-Resume.pdf" class="cta-button" download>
+                    Download CV
+                    <i class="bi bi-download"></i>
+                </a>            
+            </div>
+        </div>
+        
+        <div id="education-content" style="display: none; text-align: center; margin-top: 10px;">
+            <div class="education-container" style= "margin: 0 auto;">
+                <h2>Academic History</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="circle">
+                            <img src="images/uclm.png" alt="University of Cebu Logo" />
+                        </div>
+                        <div class="content">
+                            <h3>University of Cebu Lapu-Lapu & Mandaue</h3>
+                            <p class="degree">Bachelor of Science in Information Technology</p>
+                            <p class="academic-year">S.Y. 2021 - 2025</p>
+                            <p class="address">A. C. Cortes Ave, Mandaue City, 6014 Cebu</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="circle">
+                            <img src="images/uclm.png" alt="University of Cebu Logo" />
+                        </div>
+                        <div class="content">
+                            <h3>University of Cebu Lapu-Lapu & Mandaue</h3>
+                            <p class="degree">Senior High School</p>
+                            <p class="academic-year">S.Y. 2019 - 2021</p>
+                            <p class="address">A. C. Cortes Ave, Mandaue City, 6014 Cebu</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="circle">
+                            <img src="images/bnhs.png" alt="Bankal National High School Logo" />
+                        </div>
+                        <div class="content">
+                            <h3>Bankal National High School</h3>
+                            <p class="degree">Junior High School</p>
+                            <p class="academic-year">S.Y. 2015 - 2019</p>
+                            <p class="address">Bankal, Lapu-Lapu City</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="circle">
+                            <img src="images/bes.png" alt="Bankal Elementary School Logo" />
+                        </div>
+                        <div class="content">
+                            <h3>Bankal Elementary School</h3>
+                            <p class="degree">Elementary School</p>
+                            <p class="academic-year">S.Y. 2009 - 2015</p>
+                            <p class="address">Bankal, Lapu-Lapu City</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="contact-content" class="" style="display: none; margin: 0 auto; text-align: center; margin-top: 20px;">
+            <div class="contact-flex-container">      
+                <div class="form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h2>Contact Me</h2>
+                        <p class="form-intro">This feature is currently under development. For further inquiries, please feel free to contact me at johnlloydjustiniane13@gmail.com.
+                        </p>
+            
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                
+                        <button type="submit">
+                            <i class="bi bi-send"></i> Submit
+                        </button>
+                    </form>
+                    <div class="social-media">
+                        <h4>Or Connect with Me</h4>
+                        <a href="https://www.facebook.com/johnlloydjustiniane13" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/johnlloyd-justiniane-b936a4344/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jljstnn/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="skills-title slide-in-left"><span class="skills-highlight">My </span>Skills</h2>
+    
+        <div class="tech-tools-container fade-in">
+            <a href="javascript:void(0);" class="btn btn-primary tech-tools-button" onclick="showTechStack()">
+                <i class="bi bi-stack"></i> Tech Stack
+            </a>
+            <a href="javascript:void(0);" class="btn btn-secondary tech-tools-button" onclick="showTools()">
+                <i class="bi bi-tools"></i> Tools
+            </a>
+            <a href="javascript:void(0);" class="btn btn-secondary tech-tools-button" onclick="showLibraries()">
+                <i class="bi bi-collection"></i> Libraries
+            </a>
+        </div>
+        
+        <div class="new-skills-container" id="tech-stack" style="display: flex;">
+            <div class="skill-item">
+                <img src="images/html.png" alt="HTML" class="skill-icon" />
+                <span class="skill-name">HTML</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/css.png" alt="CSS" class="skill-icon" />
+                <span class="skill-name">CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/js.png" alt="JavaScript" class="skill-icon" />
+                <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/php.png" alt="PHP" class="skill-icon" />
+                <span class="skill-name">PHP</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/csharp.png" alt="C#" class="skill-icon" />
+                <span class="skill-name">C#</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/laravel.png" alt="Laravel" class="skill-icon" />
+                <span class="skill-name">Laravel</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/aspnet.png" alt="ASP.NET" class="skill-icon" />
+                <span class="skill-name">ASP.NET</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/mysql.png" alt="MySQL" class="skill-icon" />
+                <span class="skill-name">MySQL</span>
+            </div>
+        </div>
+        
+        <div class="new-skills-container" id="tools" style="display: none;">
+            <div class="skill-item">
+                <img src="images/vs.png" alt="Visual Studio" class="skill-icon" />
+                <span class="skill-name">Visual Studio</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/vsc.png" alt="Visual Studio Code" class="skill-icon" />
+                <span class="skill-name">Visual Studio Code</span>
+            </div>
+            <div class="skill-item ">
+                <img src="images/git.png" alt="Git" class="skill-icon" />
+                <span class="skill-name">Git</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/github.png" alt="GitHub" class="skill-icon" />
+                <span class="skill-name">GitHub</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/npm.png" alt="npm" class="skill-icon" />
+                <span class="skill-name">npm</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/composer.png" alt="Composer" class="skill-icon" />
+                <span class="skill-name">Composer</span>
+            </div>
+        </div>
+        
+        <div class="new-skills-container" id="libraries" style="display: none;">
+            <div class="skill-item">
+                <img src="images/bootstrap.png" alt="Bootstrap" class="skill-icon" />
+                <span class="skill-name">Bootstrap</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/tailwind.png" alt="Tailwind" class="skill-icon" />
+                <span class="skill-name">Tailwind</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/ajax.png" alt="AJAX" class="skill-icon" />
+                <span class="skill-name">AJAX</span>
+            </div>
+            <div class="skill-item">
+                <img src="images/jquery.png" alt="JQuery" class="skill-icon" />
+                <span class="skill-name">JQuery</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="project-title slide-in-left"><span class="project-highlight">My</span> Projects</h2>
+        <div class="project-buttons fade-in">
+            <a href="#" class="project-button" data-filter="all">
+                <i class="bi bi-grid"></i> All
+            </a>
+            <a href="#" class="project-button" data-filter="website">
+                <i class="bi bi-globe"></i> Website
+            </a>
+            <a href="#" class="project-button" data-filter="design">
+                <i class="bi bi-brush"></i> Design
+            </a>
+        </div>
+        <div class="projects-container">
+            <div class="project-card slide-in-left" data-category="design">
+                <div class="project-image-container">
+                    <img src="images/xode.png" alt="Xode Blockchain Project" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Xode Blockchain</h3>
+                    <p class="project-description">
+                        Xode Blockchain is a design concept exploring the use of blockchain technology in modern applications. With a focus on secure and transparent transactions, this project features a user-friendly interface for seamless interaction.
+                    </p>
+                    <div class="tools-used">
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #4D93FF;"></span> Framer</span>
+                    </div>
+                    <a href="https://daring-tools-425217.framer.app/" class="project-link" target="_blank">
+                        <i class="bi bi-box-arrow-up-right project-icon"> Visit</i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card slide-in-left" data-category="design">
+                <div class="project-image-container">
+                    <img src="images/easepense.png" alt="Easepense Project" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Easepense</h3>
+                    <p class="project-description">
+                        Easepense is a mobile-based application that tracks the amounts spent by users across various types of shops, providing easy-to-read summaries and detailed expense reports to help users manage their finances efficiently.
+                    </p>
+                    <div class="tools-used">
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #F24B7C;"></span> Figma</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/mAKCquW3ZP5EwYbOls0fnX/Untitled?node-id=1-2741&starting-point-node-id=1%3A2741" class="project-link" target="_blank">
+                        <i class="bi bi-box-arrow-up-right project-icon"> Visit</i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card slide-in-left" data-category="design">
+                <div class="project-image-container">
+                    <img src="images/currensee.png" alt="Currensee Project" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Currensee</h3>
+                    <p class="project-description">
+                        Currensee is a mobile-based application designed to help visually impaired users easily identify currency denominations, providing accurate detection and audio feedback to ensure safe and independent transactions in daily life.
+                    </p>
+                    <div class="tools-used">
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #F24B7C;"></span> Figma</span>
+                    </div>
+                    <a href="https://www.figma.com/proto/8N9V73PNVqxk6YHeOnJBau/Dotted---UI?node-id=557-15913&t=RoMWLUqvy26xObbC-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=384%3A15904&show-proto-sidebar=1" class="project-link" target="_blank">
+                        <i class="bi bi-box-arrow-up-right project-icon"> Visit</i>
+                    </a>
+                </div>
+            </div>        
+            
+            <div class="project-card slide-in-right" data-category="website">
+                <div class="project-image-container">
+                    <img src="images/home.png" alt="Home Essentials Project" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">Home Essentials</h3>
+                    <p class="project-description">
+                        Home Essentials is a premier eCommerce platform offering a curated selection of high-quality home products, including furniture, decor, and kitchenware. 
+                        Focused on superior craftsmanship and innovative design, we provide functional and stylish solutions for modern living spaces, all at competitive prices.
+                    </p>
+                    <div class="tools-used">
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ff4d4d;"></span> HTML</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #4dff4d;"></span> CSS</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ffcc4d;"></span> PHP</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #66ccff;"></span> AJAX</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #9b9898;"></span> jQuery</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #cc4dff;"></span> Laravel</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ff6699;"></span> Bootstrap</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #4d4dff;"></span> JavaScript</span>
+                    </div>  
+                    <a href="https://home-essential.kesug.com/" class="project-link" target="_blank">
+                        <i class="bi bi-box-arrow-up-right project-icon"> Visit</i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card slide-in-right" data-category="website">
+                <div class="project-image-container">
+                    <img src="images/tasktopia.png" alt="TaskTopia Project" class="project-image">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-name">TaskTopia</h3>
+                    <p class="project-description">
+                        TaskTopia is a task management system that allows users to create tasks, manage deadlines, and track progress.
+                         With features for organizing tasks by category and status, it provides a simple, efficient, and user-friendly way to stay on top of both personal and team projects.
+                    </p>
+                    <div class="tools-used">
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ff4d4d;"></span> HTML</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #4dff4d;"></span> CSS</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #cc4dff;"></span> PHP</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ff6699;"></span> AJAX</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ffcc4d;"></span> jQuery</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #3399ff;"></span> Bootstrap</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #ff4d99;"></span> Laravel</span>
+                        <span class="tool-item"><span class="tool-circle" style="background-color: #4d4dff;"></span> JavaScript</span>
+                    </div>
+                    <a href="https://tasktopia.infy.uk/" class="project-link" target="_blank">
+                        <i class="bi bi-box-arrow-up-right project-icon"> Visit</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <h2 class="services-title slide-in-left"><span class="services-highlight">My</span> Services</h2>
+        <div class="services-container">
+            <div class="service-card slide-in-left">
+                <div class="icon-container">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Creating responsive and high-quality websites tailored to meet your business needs, ensuring optimal performance and user experience across all devices.</p>
+                <a href="#about" class="service-button">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="service-card slide-in-right">
+                <div class="icon-container">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces and experiences that enhance customer satisfaction and engagement, focusing on usability and aesthetic appeal.</p>
+                <a href="#about" class="service-button">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="service-card slide-in-left">
+                <div class="icon-container">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Full Stack Development</h3>
+                <p>Building comprehensive web applications from frontend to backend, utilizing the latest technologies to deliver seamless functionality and performance.</p>
+                <a href="#about" class="service-button">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
+            </div>
+            <div class="service-card slide-in-right">
+                <div class="icon-container">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>App Design</h3>
+                <p>Creating intuitive and engaging mobile app interfaces that provide users with a smooth and enjoyable experience, ensuring high retention and satisfaction rates.</p>
+                <a href="#about" class="service-button">
+                    <i class="bi bi-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="bi bi-arrow-up"></i> <!-- Bootstrap Icons for the arrow -->
+    </a>
+
+    <div id="chatbot-icon" class="chatbot-icon">
+        <i class="bi bi-robot" style="font-size: 40px;"></i>
+    </div>
+    
+    <div id="chatbot-iframe" class="chatbot-iframe"> 
+        <iframe 
+            id="chatbot-frame"
+            src="https://www.chatbase.co/chatbot-iframe/QQbPtFGnNRLGWNxI1esKe?session_id=" + new Date().getTime()
+            title="Chatbot">
+        </iframe>
+        
+        <!-- Reset Chat Button -->
+        <div id="chat-reset-btn">
+            <i class="bi bi-arrow-clockwise"></i> <!-- Bootstrap icon for reset -->
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <p>
+            © 2025. All Rights Reserved. — Designed with passion by 
+            <a href="https://www.linkedin.com/in/johnlloyd-justiniane-b936a4344/" target="_blank">Johnlloyd Justiniane 💙</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/aboutChanges.js"></script>
+    <script src="js/Animation.js"></script>
+    <script src="js/backtopAnimation.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/consoleAnimation.js"></script>
+    <script src="js/navbar.js"></script> 
+    <script src="js/navbarclickAnimation.js"></script>
+    <script src="js/projectSelection.js"></script>
+    <script src="js/scrollAnimation.js" defer></script>
+    <script src="js/server.js"></script>
+    <script src="js/skillsChange.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</body>
+</html>

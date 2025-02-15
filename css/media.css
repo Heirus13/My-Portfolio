@@ -1,0 +1,1219 @@
+
+@media (min-width: 320px) and (max-width: 480px){
+    .hero {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .name {     
+        font-size: 1.2rem; /* Smaller size for smaller screens */
+        top: -70px; /* Further adjust vertical position */
+        left: 45%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    
+    .highlight {
+        font-size: 1.4rem;
+    }
+
+    .aspiring {
+        font-size: 0.9rem; /* Reduce font size for mobile */
+        top: -20px; /* Adjust top positioning to move it higher */
+        margin-left: 18px; /* Space between aspiring text and console container */
+        top: -80px; /* Move the console container upwards */
+    }
+
+    .console-container {
+        font-size: 0.15em; /* Smaller font size for the console container */
+        transform: translateY(0); /* Adjust vertical positioning for mobile */
+        margin-left: 17px; /* Space between aspiring text and console container */
+        top: -80px; /* Move the console container upwards */
+    }
+
+    .console-underscore {
+        font-size: 1em; /* Adjust underscore size */
+    }
+
+    .welcome-image {
+        height: 250px;  /* Adjust image height for mobile phones */
+    }
+
+    .circle-container {
+        width: 250px;  /* Reduce width for smaller screens */
+        height: 250px; /* Make the circle container smaller */
+        top: -300px;
+    }
+      
+    .home-icon {
+        bottom: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    
+    .about-title,
+    .services-title,
+    .skills-title,
+    .project-title {
+        font-size: 2em;
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 20px; /* Added top margin to ensure the title is visible above the image */
+    }
+
+    .about-circle-container {
+        width: 250px; /* Adjusted width for mobile phones */
+        height: 250px; /* Adjusted height for mobile phones */
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        padding: 5px 10px;
+        font-size: 9px;
+        min-width: 100px;
+    }
+
+    .projects-container {
+        max-width: 1200px; /* Set a maximum width for the container */
+        margin: 0 auto; /* Center the container within its parent */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+
+    .service-card {
+        padding: 1.5rem; 
+        height: auto; 
+    }
+
+    .service-card h3 {
+        font-size: 1.5em; 
+    }
+
+    .service-card p {
+        font-size: 0.8em;
+    }
+
+    .service-button {
+        font-size: 10px; 
+        padding: 7px;
+    }
+
+    .paragraph-container {
+        padding: 8px;
+    }
+
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .chatbot-icon {
+        width: 8vw;
+        height: 8vw;
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .chatbot-icon img {
+        width: 40px; /* Set a smaller width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Keep it circular */
+    }
+
+    .chatbot-iframe {
+        width: 90vw;
+        height: 50vh;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .paragraph-container,
+    .education-container,
+    .form-container {
+        max-width: 85%; /* Use more of the screen width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .paragraph-container p {
+        font-size: 0.8em; /* Further reduce text size */
+        margin-right: 10px; /* Reduce right margin */
+        padding-right: 0; /* Optionally, set padding to zero */
+    }
+
+
+    .education-container li,
+    .contact-form label {
+        font-size: 0.9em; /* Further reduce text size */
+    }
+
+    .paragraph-container h2,
+    .education-container h2,
+    .contact-form h2 {
+        font-size: 1.2em; /* Smaller heading size */
+    }
+    
+    .timeline-item h3 {
+        font-size: 8px; /* Smaller font size for the institution name */
+        margin: 0; /* Remove default margin */
+        text-align: left; /* Align text to the left */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the institution name white */
+    }
+
+    .timeline-item p.degree {
+        font-size: 5px; /* Smaller font size for the degree */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the degree text white */
+    }
+
+    .timeline-item p.address {
+        font-size: 6px; /* Smaller font size for the address */
+        margin: 4px 0; /* Adjust margin for spacing */
+        color: #ffffff; /* Keep the address texts white */
+    }
+
+    .timeline-item p.academic-year {
+        font-size: 8px; 
+        margin: 4px 0; 
+        font-weight: normal; 
+        color: #d0d0d0; 
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .circle img {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .btn {
+        font-size: 7px; 
+        padding: 6px;
+    }
+
+    .content {
+        background-color: rgb(20 20 20 / 90%);
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 200%;
+        max-width: 100px;
+        position: relative;
+        margin-left: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .contact-section {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .form-container {
+        margin: 10px 0; 
+    }
+
+    .about-text {
+        font-size: 1.2em; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+    }
+
+    .social-media a {
+        width: 40px;
+        height: 40px; 
+        font-size: 20px; 
+    }
+
+    .contact-flex-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .skill-icon {
+        width: 20px; 
+        height: 20px; 
+        margin-right: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.7em; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .skill-item {
+        width: 25%;
+        height: auto; 
+        margin: 10px;
+    }
+
+    .project-button {
+        font-size: 8px; 
+        padding: 6px; 
+    }
+
+    .project-button i {
+        font-size: 10px; 
+        margin-right: 5px; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1200;
+        position: relative;
+    }
+    
+    .hamburger .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #121212;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        z-index: 1100;
+        text-align: center;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        overflow: hidden; 
+    }
+    
+    #menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #menu:not(.active) {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        background-color: #121212; 
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                    opacity 0.6s ease-in-out, 
+                    visibility 0s linear 0.6s; 
+    }  
+    
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu.active ul {
+        display: flex;
+    }
+    
+    #menu ul li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #navbar.scrolled {
+        height: 40px;
+        background: rgba(18, 18, 18, 0.9);
+        z-index: 1000;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    body.no-scroll {
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        width: 100vw;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 720px){
+    .hero {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+    
+    .name {     
+        font-size: 1.2rem; /* Smaller size for smaller screens */
+        top: -70px; /* Further adjust vertical position */
+        left: 45%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+    }
+    
+    .highlight {
+        font-size: 1.4rem;
+    }
+
+    .aspiring {
+        font-size: 0.9rem; /* Reduce font size for mobile */
+        top: -20px; /* Adjust top positioning to move it higher */
+        margin-left: 18px; /* Space between aspiring text and console container */
+        top: -80px; /* Move the console container upwards */
+    }
+
+    .console-container {
+        font-size: 0.15em; /* Smaller font size for the console container */
+        transform: translateY(0); /* Adjust vertical positioning for mobile */
+        margin-left: 17px; /* Space between aspiring text and console container */
+        top: -80px; /* Move the console container upwards */
+    }
+
+    .console-underscore {
+        font-size: 1em; /* Adjust underscore size */
+    }
+
+    .welcome-image {
+        height: 260px;  /* Adjust image height for mobile phones */
+    }
+
+    .circle-container {
+        width: 260px;  /* Reduce width for smaller screens */
+        height: 260px; /* Make the circle container smaller */
+        top: -350px;
+    }
+      
+    .home-icon {
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    
+    .about-title,
+    .services-title,
+    .skills-title,
+    .project-title {
+        font-size: 2em;
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 20px; /* Added top margin to ensure the title is visible above the image */
+    }
+
+    .about-circle-container {
+        width: 250px; /* Adjusted width for mobile phones */
+        height: 250px; /* Adjusted height for mobile phones */
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        padding: 5px 10px;
+        font-size: 9px;
+        min-width: 100px;
+    }
+
+    .projects-container {
+        max-width: 1200px; /* Set a maximum width for the container */
+        margin: 0 auto; /* Center the container within its parent */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+
+    .service-card {
+        padding: 1.5rem; 
+        height: auto; 
+    }
+
+    .service-card h3 {
+        font-size: 1.5em; 
+    }
+
+    .service-card p {
+        font-size: 1em;
+    }
+
+    .service-button {
+        font-size: 10px; 
+        padding: 7px;
+    }
+
+    .paragraph-container {
+        padding: 8px;
+    }
+
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .chatbot-icon {
+        width: 8vw;
+        height: 8vw;
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .chatbot-icon img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .chatbot-iframe {
+        width: 90vw;
+        height: 50vh;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .paragraph-container,
+    .education-container,
+    .form-container {
+        max-width: 85%; /* Use more of the screen width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .paragraph-container p {
+        font-size: 0.8em; /* Further reduce text size */
+        margin-right: 10px; /* Reduce right margin */
+        padding-right: 0; /* Optionally, set padding to zero */
+    }
+
+
+    .education-container li,
+    .contact-form label {
+        font-size: 0.9em; /* Further reduce text size */
+    }
+
+    .paragraph-container h2,
+    .education-container h2,
+    .contact-form h2 {
+        font-size: 1.2em; /* Smaller heading size */
+    }
+    
+    .timeline-item h3 {
+        font-size: 8px; /* Smaller font size for the institution name */
+        margin: 0; /* Remove default margin */
+        text-align: left; /* Align text to the left */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the institution name white */
+    }
+
+    .timeline-item p.degree {
+        font-size: 5px; /* Smaller font size for the degree */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the degree text white */
+    }
+
+    .timeline-item p.address {
+        font-size: 6px; /* Smaller font size for the address */
+        margin: 4px 0; /* Adjust margin for spacing */
+        color: #ffffff; /* Keep the address text white */
+    }
+
+    .timeline-item p.academic-year {
+        font-size: 8px; 
+        margin: 4px 0; 
+        font-weight: normal; 
+        color: #d0d0d0; 
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px; 
+    }
+
+    .circle img {
+        width: 100%; 
+        height: 100%; 
+    }
+
+    .btn {
+        font-size: 7px; 
+        padding: 6px;
+    }
+
+    .content {
+        background-color: rgb(20 20 20 / 90%);
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 200%;
+        max-width: 100px;
+        position: relative;
+        margin-left: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .contact-section {
+        flex-direction: column; 
+        width: 90%; 
+    }
+
+    .form-container {
+        margin: 10px 0; 
+    }
+
+    .about-text {
+        font-size: 1.2em; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+    }
+
+    .social-media a {
+        width: 40px;
+        height: 40px; 
+        font-size: 20px; 
+    }
+
+    .contact-flex-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .skill-icon {
+        width: 20px; 
+        height: 20px; 
+        margin-right: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.7em; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .skill-item {
+        width: 25%;
+        height: auto; 
+        margin: 10px;
+    }
+
+    .project-button {
+        font-size: 8px; 
+        padding: 6px; 
+    }
+
+    .project-button i {
+        font-size: 10px; 
+        margin-right: 5px; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1200;
+        position: relative;
+    }
+    
+    .hamburger .bar {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #121212;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; 
+        height: 100vh;
+        z-index: 1100;
+        text-align: center;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        overflow: hidden; 
+    }
+    
+    #menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #menu:not(.active) {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        background-color: #121212; 
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+                    opacity 0.6s ease-in-out, 
+                    visibility 0s linear 0.6s; 
+    }  
+    
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu.active ul {
+        display: flex;
+    }
+    
+    #menu ul li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #navbar.scrolled {
+        height: 40px;
+        background: rgba(18, 18, 18, 0.9);
+        z-index: 1000;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    body.no-scroll {
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+        width: 100vw;
+    }
+
+}
+
+
+@media (min-width: 721px) and (max-width: 780px){
+    
+    .name {
+        font-size: 1.5rem; /* Smaller size for smaller screens */
+        top: -400px; /* Further adjust vertical position */
+        left: 47%; /* Center horizontally */
+        text-align: center;
+    }
+    
+    .highlight {
+        font-size: 1.6rem;
+    }
+    
+    .aspiring-container {
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        margin-top: 10px; /* Space above the aspiring-container */
+    }
+    
+    .aspiring {
+        font-size: 1.2rem; /* Reduce font size for mobile */
+        top: -420px; /* Adjust top positioning to be below name/highlight */
+        left: 80px;
+    }
+    
+    .console-container {
+        font-size: 0.2em; /* Adjust font size for better visibility */
+        transform: translateY(0); /* Adjust vertical positioning */
+        top: -470px; /* Match the vertical position of aspiring */
+        left: 350px; /* Positioning from the left to match aspiring */
+        margin-left: 0; /* Reset left margin */
+        margin-right: auto; /* Move to the right side if needed */
+        white-space: nowrap; /* Prevent line breaks */
+        width: 400px; /* Set a longer width for the console container */
+        padding: 5px; /* Optional: add some padding */
+    }
+    
+    .console-underscore {
+        font-size: 1em; /* Adjust underscore size */
+    }
+    
+    .welcome-image {
+        height: 350px; /* Adjust image height for mobile phones */
+    }
+    
+    .circle-container {
+        width: 350px; /* Reduce width for smaller screens */
+        height: 350px; /* Make the circle container smaller */
+        top: 100px;
+        right: 210px;
+    }
+    
+    .home-icon {
+        bottom: 90px;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+    
+    /* Adjust elements to fit larger screens */
+    .about-title,
+    .services-title,
+    .skills-title,
+    .project-title {
+        font-size: 3em; /* Adjust size for larger screens */
+        text-align: center; /* Center the text */
+        margin: 50px; /* Optional: reset margin for better alignment */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Increase padding for larger buttons */
+        font-size: 14px; /* Increase font size */
+    }
+
+    .paragraph-container,
+    .education-container,
+    .form-container {
+        max-width: 90%; /* Use more of the screen width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .content {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 200%;
+        max-width: 280px;
+        position: relative;
+        margin-left: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .btn {
+        font-size: 15px; 
+        padding: 6px 10px;
+    }
+
+    .skill-icon {
+        width: 30px; 
+        height: 30px; 
+        margin-right: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.7em; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .skill-item {
+        height: auto; 
+        padding: 8px; /* Reduce padding for less height */
+        margin-bottom: 5px; /* Add a small bottom margin to create space between items */
+    }
+
+    .project-button {
+        font-size: 15px; 
+        padding: 5px 10px; 
+    }
+
+    .project-button i {
+        font-size: 15px; 
+        margin-right: 5px 10px; 
+    }
+    
+    .service-card h3 {
+        font-size: 1.1em; /* Increase size for headings in service cards */
+    }
+    
+    .service-card p {
+        font-size: 0.9em; /* Increase size for paragraphs in service cards */
+    }
+
+    .service-button {
+        font-size: 10px; 
+        padding: 15px 5px; 
+    }
+
+    .icon-container i {
+        font-size: 35px; 
+    }
+}
+
+
+@media (min-width: 781px) and (max-width: 850px){
+    
+    .name {
+        font-size: 1.5rem; /* Smaller size for smaller screens */
+        top: -400px; /* Further adjust vertical position */
+        left: 55%; /* Center horizontally */
+        text-align: center;
+    }
+    
+    .highlight {
+        font-size: 1.6rem;
+    }
+    
+    .aspiring-container {
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        margin-top: 10px; /* Space above the aspiring-container */
+    }
+    
+    .aspiring {
+        font-size: 1.2rem; /* Reduce font size for mobile */
+        top: -420px; /* Adjust top positioning to be below name/highlight */
+        left: 110px;
+    }
+    
+    .console-container {
+        font-size: 0.2em; /* Adjust font size for better visibility */
+        transform: translateY(0); /* Adjust vertical positioning */
+        top: -470px; /* Match the vertical position of aspiring */
+        left: 380px; /* Positioning from the left to match aspiring */
+        margin-left: 0; /* Reset left margin */
+        margin-right: auto; /* Move to the right side if needed */
+        white-space: nowrap; /* Prevent line breaks */
+        width: 400px; /* Set a longer width for the console container */
+        padding: 5px; /* Optional: add some padding */
+    }
+    
+    .console-underscore {
+        font-size: 1em; /* Adjust underscore size */
+    }
+    
+    .welcome-image {
+        height: 350px; /* Adjust image height for mobile phones */
+    }
+    
+    .circle-container {
+        width: 350px; /* Reduce width for smaller screens */
+        height: 350px; /* Make the circle container smaller */
+        top: 100px;
+        right: 210px;
+    }
+    
+    .home-icon {
+        bottom: 90px;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+    
+    /* Adjust elements to fit larger screens */
+    .about-title,
+    .services-title,
+    .skills-title,
+    .project-title {
+        font-size: 3em; /* Adjust size for larger screens */
+        text-align: center; /* Center the text */
+        margin: 50px; /* Optional: reset margin for better alignment */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Increase padding for larger buttons */
+        font-size: 14px; /* Increase font size */
+    }
+
+    .paragraph-container,
+    .education-container,
+    .form-container {
+        max-width: 90%; /* Use more of the screen width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .content {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 200%;
+        max-width: 280px;
+        position: relative;
+        margin-left: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .btn {
+        font-size: 15px; 
+        padding: 6px 10px;
+    }
+
+    .skill-icon {
+        width: 30px; 
+        height: 30px; 
+        margin-right: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.7em; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .skill-item {
+        height: auto; 
+        padding: 8px; /* Reduce padding for less height */
+        margin-bottom: 5px; /* Add a small bottom margin to create space between items */
+    }
+
+    .project-button {
+        font-size: 15px; 
+        padding: 5px 10px; 
+    }
+
+    .project-button i {
+        font-size: 15px; 
+        margin-right: 5px 10px; 
+    }
+    
+    .service-card h3 {
+        font-size: 1.1em; /* Increase size for headings in service cards */
+    }
+    
+    .service-card p {
+        font-size: 0.9em; /* Increase size for paragraphs in service cards */
+    }
+
+    .service-button {
+        font-size: 10px; 
+        padding: 15px 5px; 
+    }
+
+    .icon-container i {
+        font-size: 35px; 
+    }
+}
+
+@media (min-width: 851px) and (max-width: 911px){
+    
+    .name {
+        font-size: 1.5rem; /* Smaller size for smaller screens */
+        top: -400px; /* Further adjust vertical position */
+        left: 55%; /* Center horizontally */
+        text-align: center;
+    }
+    
+    .highlight {
+        font-size: 1.6rem;
+    }
+    
+    .aspiring-container {
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center horizontally */
+        margin-top: 10px; /* Space above the aspiring-container */
+    }
+    
+    .aspiring {
+        font-size: 1.2rem; /* Reduce font size for mobile */
+        top: -420px; /* Adjust top positioning to be below name/highlight */
+        left: 110px;
+    }
+    
+    .console-container {
+        font-size: 0.2em; /* Adjust font size for better visibility */
+        transform: translateY(0); /* Adjust vertical positioning */
+        top: -470px; /* Match the vertical position of aspiring */
+        left: 380px; /* Positioning from the left to match aspiring */
+        margin-left: 0; /* Reset left margin */
+        margin-right: auto; /* Move to the right side if needed */
+        white-space: nowrap; /* Prevent line breaks */
+        width: 400px; /* Set a longer width for the console container */
+        padding: 5px; /* Optional: add some padding */
+    }
+    
+    .console-underscore {
+        font-size: 1em; /* Adjust underscore size */
+    }
+    
+    .welcome-image {
+        height: 350px; /* Adjust image height for mobile phones */
+    }
+    
+    .circle-container {
+        width: 350px; /* Reduce width for smaller screens */
+        height: 350px; /* Make the circle container smaller */
+        top: 100px;
+        right: 210px;
+    }
+    
+    .home-icon {
+        bottom: 90px;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+    
+    /* Adjust elements to fit larger screens */
+    .about-title,
+    .services-title,
+    .skills-title,
+    .project-title {
+        font-size: 3em; /* Adjust size for larger screens */
+        text-align: center; /* Center the text */
+        margin: 50px; /* Optional: reset margin for better alignment */
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Increase padding for larger buttons */
+        font-size: 14px; /* Increase font size */
+    }
+
+    .paragraph-container,
+    .education-container,
+    .form-container {
+        max-width: 90%; /* Use more of the screen width */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .content {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        width: 200%;
+        max-width: 280px;
+        position: relative;
+        margin-left: 15px;
+        font-family: Arial, sans-serif;
+    }
+    
+
+    .btn {
+        font-size: 15px; 
+        padding: 6px 10px;
+    }
+
+    .skill-icon {
+        width: 30px; 
+        height: 30px; 
+        margin-right: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.7em; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    .skill-item {
+        height: auto; 
+        padding: 8px; /* Reduce padding for less height */
+        margin-bottom: 5px; /* Add a small bottom margin to create space between items */
+    }
+
+    .project-button {
+        font-size: 15px; 
+        padding: 5px 10px; 
+    }
+
+    .project-button i {
+        font-size: 15px; 
+        margin-right: 5px 10px; 
+    }
+    
+    .service-card h3 {
+        font-size: 1.1em; /* Increase size for headings in service cards */
+    }
+    
+    .service-card p {
+        font-size: 0.9em; /* Increase size for paragraphs in service cards */
+    }
+
+    .service-button {
+        font-size: 10px; 
+        padding: 15px 5px; 
+    }
+
+    .icon-container i {
+        font-size: 35px; 
+    }
+}
+
+@media (min-width: 912px) and (max-width: 1024px){
+
+}
+

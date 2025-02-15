@@ -1,0 +1,66 @@
+.fade-in, 
+.slide-left-fast, 
+.slide-left-slow, 
+.slide-right-fast, 
+.slide-right-slow, 
+.slide-in-left, 
+.slide-in-right {
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for both */
+    will-change: opacity, transform;
+}
+
+.fade-in.show, 
+.slide-left-fast.show, 
+.slide-left-slow.show, 
+.slide-right-fast.show, 
+.slide-right-slow.show, 
+.slide-in-left.show, 
+.slide-in-right.show {
+    opacity: 1;
+    transform: translateY(0); /* For fade-in */
+}
+
+.fade-in {
+    transform: translateY(40px); /* Start position for fade-in */
+}
+
+.slide-in-left {
+    transform: translateX(-40px); /* Slide in from the left */
+}
+
+.slide-in-right {
+    transform: translateX(40px); /* Slide in from the right */
+}
+
+.slide-left-fast {
+    transform: translateX(-40px);
+}
+
+.slide-left-slow {
+    transform: translateX(-40px);
+}
+
+.slide-right-fast {
+    transform: translateX(40px);
+}
+
+.slide-right-slow {
+    transform: translateX(40px);
+}
+
+.slide-left-fast.show, 
+.slide-left-slow.show,
+.slide-in-left.show {
+    transform: translateX(0); /* Completed position for left */
+}
+
+.slide-right-fast.show, 
+.slide-right-slow.show,
+.slide-in-right.show {
+    transform: translateX(0); /* Completed position for right */
+}
+
+.show {
+    opacity: 1; /* Ensure show class maintains opacity */
+}

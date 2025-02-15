@@ -1,0 +1,1324 @@
+    /* General Styles */
+
+    body {
+        font-family: 'Arial';
+        background: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .background {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+        overflow: hidden; 
+    }
+
+    .name {
+        font-size: 4rem;
+        margin: 0;
+        color: #F0F0F0;
+        text-align: center;
+        position: relative;
+        top: -670px;
+        padding-left: 20px;
+        width: fit-content; 
+    }
+    
+    .highlight {
+        color: #174075;
+    }
+    
+    .aspiring-container {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .aspiring {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.8rem;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        top: -700px;
+        text-transform: uppercase;
+        color: #174075;
+    }
+    
+    .console-container {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.55em;
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        display: flex;
+        align-items: center;
+        color: #F0F0F0;
+        margin-left: 30px;
+        position: relative;
+        transform: translateY(-700px);
+    }
+    
+    .console-l {
+        display: inline-block;
+        position: relative;
+        left: 10px;
+        font-weight: bold;
+        font-size: 1.5em;
+        animation: blink 0.75s step-end infinite;
+    }
+    
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-transform: uppercase;
+        color: #e5e5e5;
+        font-size: 2.26rem;
+        height: 100vh;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+    
+    .home-icon {
+        margin-top: 200px; 
+        position: absolute; 
+        left: 95px; 
+        bottom: 360px; 
+        display: flex;
+        gap: 20px;
+        z-index: 1;
+    }
+    
+    .home-icon-link {
+        color: #174075;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid #174075;
+        background-color: transparent;
+        transition: all 0.3s;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .home-icon-link::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: -40px;
+        transform: skewX(45deg);
+        background-color: #174075;
+        z-index: -1;
+        transition: all 0.3s;
+    }
+    
+    .home-icon-link:hover {
+        color: white;
+    }
+    
+    .home-icon-link:hover::before {
+        width: 160%;
+    }
+    
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .hero-container {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 50%;
+        margin-top: 80%;
+    }
+    
+    .hero-image__pic {
+        max-width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+    
+    /* Welcome Page Image Styles */
+    .welcome-image-wrapper {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    .welcome-image {
+        height: 500px; /* Maintain height for the circular shape */
+        position: relative; /* Required for absolute positioning */
+        margin-top: -20px; /* Adjust this value as needed */
+    }
+    
+    .welcome-image video {
+        width: 100%; /* Ensure the video fits within the circle */
+        height: 110%; /* Ensure the video fits within the circle */
+        border-radius: 50%; /* Keep it circular */
+        object-fit: cover; /* Maintain aspect ratio and cover the area */
+        position: absolute; /* Ensure positioning */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+    }
+    
+    .circle-container {
+        position: relative;
+        width: 500px; /* Adjust as needed */
+        height: 500px; /* Adjust as needed */
+        background-color: #111; /* Background color */
+        border-radius: 50%; /* Keep it circular */
+        overflow: hidden; /* Hide overflow for the circular shape */
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .circle-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 60px rgba(0, 0, 0, 0.7);
+    }
+    
+    
+    #text {
+        color: white;
+        font-size: 2em;
+    }
+    
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    h1 {
+        font-size: 64px;
+        margin: 0;
+    }
+    
+    .hero .subtitle {
+        font-size: 36px;
+        max-width: 600px;
+        line-height: 1.75em;
+        text-align: left;
+        margin-left: 10px;
+        color: #ffffff;
+    }
+
+    #navbar {
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    #navbar.scrolled {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px; 
+        background: linear-gradient(135deg, rgba(51, 51, 51, 0.7), rgba(30, 30, 30, 0.7));
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); 
+        z-index: 1000; 
+    }
+
+    .navT {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        background: #121212;
+        color: white;
+        padding: 15px 30px; 
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1; 
+    }
+
+    #menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu ul li {
+        margin: 0 20px;
+    }
+
+    #menu ul li a {
+        text-decoration: none; 
+        color: white;
+        font-size: 18px; 
+        font-family: 'Montserrat', sans-serif; 
+    }
+
+    #menu a:hover {
+        color: #174075; 
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        background: white;
+        height: 3px;
+        width: 30px;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    html, body {
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+        width: 100%; 
+    }
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+    }
+
+    p {
+        font-size: 100px; 
+        line-height: 1.75em;
+        text-align: left; 
+        margin-left: 10px;
+    }
+
+    /* Section Styles */
+    .section {
+        min-height: 100vh; 
+        padding: 50px 20px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* Center the buttons */
+        gap: 20px; /* Space between buttons */
+    }
+    
+    .btn {
+        background-color: transparent; /* Make background transparent for the effect */
+        color: #d8d4d4; /* Button text color */
+        padding: 10px 10px; /* Padding for button sizing */
+        border: 2px solid #174075; /* Dark purple border */
+        text-transform: uppercase;
+        text-decoration: none; 
+        font-size: 15px;
+        cursor: pointer;
+        position: relative; /* Ensure the pseudo-element is positioned correctly */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+    }
+    
+    .btn i {
+        margin-right: 5px; /* Space for icon */
+    }
+    
+    .btn::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Position for skew effect */
+        transform: skewX(45deg);
+        background-color: #174075; /* Background color for the effect (purple) */
+        z-index: -1; /* Place it behind the button */
+        transition: all 0.5s; /* Smooth transition for width */
+    }
+    
+    .btn:hover {
+        color: #ffffff; /* Change text color to white on hover */
+        transform: scale(1.05); /* Scale effect */
+    }
+    
+    .btn:hover::before {
+        width: 160%; /* Expand background on hover */
+    }
+
+    .about-title {
+        font-size: 5em;
+        padding-top: 100px;
+        text-align: center; /* Center the title */
+        margin-bottom: 20px;
+        margin-left: -780px; /* Adjust this value to move it left */
+    }
+    
+    .about-text {
+        flex: 1;
+        padding-left: 20px;
+        text-align: center; /* Center text for smaller screens */
+        font-size: 1.5em;
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items in the flex container */
+    }
+    
+    .about-highlight {
+        color: #174075;
+    }
+
+    .paragraph-container {
+        position: relative; /* Ensure the pseudo-element is positioned correctly */
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        padding: 15px 20px; /* Set padding equally on top and bottom and on left and right */
+        border-radius: 10px;
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        max-width: 620px;
+        margin: 0 auto; /* Center the container horizontally */
+        overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+        position: relative; /* Keep other elements positioned correctly */
+        flex-direction: column; /* Align children in a column */
+        max-width: 800px;
+    }
+    
+    .paragraph-container p {
+        text-align: justify;
+        color: #bbb8b8; /* Ensure text is visible against the background */
+        font-size: 1.2em; /* Increase text size (adjust as needed) */
+        line-height: 1.5; /* Improve readability with line height */
+    }
+
+    .paragraph-container h2 {
+        text-align: center; /* Center the heading */
+        color: #d8d4d4; /* Ensure the heading is visible against the background */
+        font-size: 1.5em; /* Adjust heading size (optional) */
+        margin-bottom: 15px; /* Space below the heading */
+    }
+    
+
+    .education-container {
+        position: relative; /* Ensure the pseudo-element is positioned correctly */
+        background-color: rgba(255, 255, 255, 0); /* Very transparent white for glass effect */
+        padding: 20px 10px; /* Adjust padding for vertical spacing and some horizontal space */
+        border-radius: 10px;
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        max-width: 90%; /* Set max-width to 90% for responsiveness */
+        margin: 20px auto; /* Center the container horizontally and add top/bottom margin */
+        overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+        max-width: 800px;
+    }
+    
+    .education-container h2 {
+        text-align: center; /* Center the heading */
+        color: #d8d4d4; /* Ensure the heading is visible against the background */
+        font-size: 1.5em; /* Adjust heading size (optional) */
+        margin-bottom: 15px; /* Space below the heading */
+    }
+    
+    .education-container ul {
+        list-style-type: none; /* Remove default list styles */
+        padding-left: 0; /* Remove left padding */
+    }
+    
+    .education-container li {
+        color: #d8d4d4; /* Ensure text is visible against the background */
+        font-size: 1.1em; /* Adjust list item size (optional) */
+        line-height: 1.5; /* Improve readability with line height */
+    }
+
+    .timeline {
+        position: relative; /* Positioning context for the items */
+        margin: 0 auto; /* Center the timeline */
+    }
+    
+    .timeline-item {
+        display: flex; /* Flexbox layout */
+        align-items: center; /* Center vertically */
+        position: relative; /* Positioning context */
+        justify-content: space-between; /* Space between circle and content */
+        width: 100%; /* Ensure items take full width */
+        margin-bottom: 30px; /* Add space between timeline items */
+    }
+    
+    .timeline-item.right {
+        flex-direction: row-reverse; /* Reverse the order of items for right alignment */
+    }
+    
+    .timeline-item h3 {
+        font-size: 15px; /* Adjust font size for the institution name */
+        margin: 0; /* Remove default margin */
+        text-align: left; /* Align text to the left */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the institution name white */
+    }
+    
+    .timeline-item p.degree {
+        font-size: 13px; /* Adjust font size for the degree */
+        margin: 5px 0; /* Add some margin for spacing */
+        font-weight: bold; /* Make the text bold */
+        color: #ffffff; /* Keep the degree text white */
+    }
+    
+    .timeline-item p.academic-year {
+        font-size: 11px; /* Adjust font size for the academic year */
+        margin: 5px 0; /* Add some margin for spacing */
+        font-weight: normal; /* Keep the text normal weight */
+        color: #d0d0d0; /* Light gray color for visibility */
+    }
+    
+    .timeline-item p.address {
+        font-size: 13px; /* Adjust font size for the address */
+        margin: 5px 0; /* Add some margin for spacing */
+        color: #ffffff; /* Keep the address text white */
+    }
+    
+    .content {
+        background-color: #2a2a2a; /* Background for the content */
+        color: #ffffff; /* Text color */
+        padding: 15px; /* Inner padding */
+        border-radius: 10px; /* Rounded corners */
+        margin-top: 20px;
+        width: 300px; /* Fixed width for the content box */
+        position: relative; /* Positioning context for the content */
+        margin-left: 20px; /* Space between the circle and content */
+        font-family: Arial, sans-serif; /* Set a font family */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .content:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 60px rgba(0, 0, 0, 0.7);
+    }
+    
+    .timeline-item.right .content {
+        margin-left: 0; /* Remove margin for right-aligned items */
+        margin-right: 20px; /* Add margin to the right */
+    }
+    
+    .circle {
+        width: 40px; /* Increased circle width */
+        height: 40px; /* Increased circle height */
+        border: 3px solid #174075; /* Circle border */
+        border-radius: 50%; /* Make it circular */
+        background-color: #ffffff; /* Circle background */
+        position: absolute; /* Position relative to the timeline item */
+        left: calc(50% - 20px); /* Center the circle */
+        z-index: 1; /* Ensure it appears above the line */
+        display: flex; /* Use flexbox for centering the image */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+    
+    .circle img {
+        width: 100%; /* Make image fill the circle */
+        height: 100%; /* Ensure image height matches circle height */
+        object-fit: cover; /* Scale image to cover the circle */
+        border-radius: 50%; /* Optional: round the image corners */
+    }
+    
+    .timeline-item.right .circle {
+        left: calc(50% - 20px); /* Keep circle centered for right items too */
+    }
+    
+    /* Adjust the line to ensure it aligns with the circles */
+    .line {
+        position: absolute; /* Positioning context for the line */
+        left: 50%; /* Center the line */
+        top: 0; /* Align to the top */
+        bottom: 0; /* Stretch to the bottom */
+        width: 4px; /* Line width */
+        background-color: #174075; /* Line color */
+        transform: translateX(-50%); /* Center the line */
+        z-index: 0; /* Behind the circles and content */
+    }
+    
+    .cta-button {
+        color: #d8d4d4; /* Dark purple text color */
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid #174075; /* Dark purple border */
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+        transition: all 1s;
+        overflow: hidden;
+        margin-top: 40px;
+        display: inline-block;
+        min-width: 150px;
+        text-align: center;
+    }
+    
+    .cta-button:hover {
+        color: white; /* Change text color on hover */
+        transform: scale(1.05); /* Scale effect */
+    }
+    
+    .cta-button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        top: 0;
+        left: -40px;
+        transform: skewX(45deg);
+        background-color: #174075; /* Dark purple background */
+        z-index: -1;
+        transition: all 0.7s;
+    }
+    
+    .cta-button:hover::before {
+        width: 160%; /* Expand the background on hover */
+    }
+    
+    .cta-button i {
+        margin-left: 10px;
+    }
+
+    #contact-content {
+        display: none; /* Initially hidden */
+        margin: 0 auto; /* Center alignment */
+        text-align: center; /* Center text */
+        margin-top: 20px; /* Space above */
+    }
+    
+    .contact-flex-container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Distribute space between items */
+        align-items: flex-start; /* Align items at the start */
+    }
+    
+    .form-container {
+        flex: 1; /* Allow the form container to take available space */
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        padding: 15px 20px; /* Set padding equally on top and bottom and on left and right */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        max-width: 700px; /* Adjusted to match paragraph container */
+        margin: 0 auto; /* Center the container horizontally */
+        overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+        position: relative; /* Keep other elements positioned correctly */
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column; /* Align children in a column */
+    }
+    
+    .contact-form h2 {
+        text-align: center; /* Center the heading */
+        color: #d8d4d4; /* Set heading color */
+        font-size: 1.5em; /* Set font size */
+        margin-bottom: 15px; /* Space below the heading */
+    }
+    
+    .contact-form label {
+        font-size: 1.1rem; /* Font size for labels */
+        margin-bottom: 10px; /* Space between label and input */
+        display: block; /* Make label a block element */
+        color: #d8d4d4; /* Label text color */
+        text-align: left; /* Align labels to the left */
+    }
+    
+    .form-intro {
+        font-size: 14px; 
+        color: #d8d4d4; /* Intro text color */
+        text-align: center;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 40px); /* Full width minus padding */
+        padding: 10px; /* Inner padding */
+        margin-bottom: 15px; /* Space below inputs */
+        border: 1px solid #ccc; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        background-color: #1a1919; /* Background color */
+        color: #ffffff; /* Text color */
+        text-align: left; /* Align text to the left */
+    }
+    
+    .contact-form button {
+        padding: 7px 20px; /* Button padding */
+        background-color: transparent; /* Transparent background */
+        color: #c4c4c4; /* Button text color */
+        border: 2px solid #174075; /* Button border color */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        margin: 35px auto; /* Center button */
+        display: flex; /* Flexbox for icon and text */
+        align-items: center; /* Center icon and text vertically */
+        font-size: 1.1rem; /* Font size */
+        position: relative; /* Ensure pseudo-element is positioned correctly */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+    }    
+    
+    .contact-form button i {
+        font-size: 1.5rem; /* Icon size */
+        margin-right: 5px; /* Space between icon and text */
+    }
+    
+    /* Pseudo-element for hover effect */
+    .contact-form button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Position for skew effect */
+        transform: skewX(45deg);
+        background-color: #174075; /* Background color for the effect */
+        z-index: -1; /* Place it behind the button */
+        transition: all 0.5s; /* Smooth transition for width */
+    }
+    
+    .contact-form button:hover {
+        color: white; /* Change text color on hover */
+        transform: scale(1.05); /* Scale effect */
+    }
+    
+    .contact-form button:hover::before {
+        width: 160%; /* Expand background on hover */
+    }
+    
+    .social-media {
+        text-align: center; /* Center social media icons */
+        margin-top: 20px; /* Space above */
+    }
+    
+    .social-media a {
+        display: inline-flex; /* Flexbox for alignment */
+        justify-content: center; /* Center the icon */
+        align-items: center; /* Center the icon */
+        width: 50px; /* Circular background width */
+        height: 50px; /* Circular background height */
+        border-radius: 50%; /* Make it circular */
+        border: 3px solid #174075; /* Edge color */
+        margin: 0 10px; /* Space between icons */
+        font-size: 24px; /* Icon size */
+        color: #174075; /* Icon color */
+        position: relative; /* Required for the pseudo-element */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s; /* Transition for color change */
+    }
+    
+    /* Pseudo-element for hover effect */
+    .social-media a::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Position for skew effect */
+        transform: skewX(45deg);
+        background-color: #174075; /* Background color for the effect */
+        z-index: -1; /* Place it behind the icon */
+        transition: all 0.3s; /* Smooth transition for width */
+    }
+    
+    .social-media a:hover {
+        color: white; /* Change color on hover */
+    }
+    
+    .social-media a:hover::before {
+        width: 160%; /* Expand background on hover */
+    }
+    
+
+    .skills-section {
+        padding: 50px 20px; /* Add padding for the skills section */
+    }    
+
+    .skills-title {
+        font-size: 5em; 
+        margin-left: 350px;
+        margin-top: 130px;
+        color: #ffffff; 
+    }
+
+    .skills-highlight {
+        color: #174075;
+    }
+
+    .new-skills-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        margin: 20px auto; 
+        max-width: 1200px; 
+    }
+
+    .skill-item {
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        border-radius: 5px; 
+        padding: 10px; 
+        margin: 15px; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 200px; 
+        height: 60px; 
+        transition: transform 0.3s; 
+    }
+
+    .skill-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+    }
+
+    .skill-icon {
+        width: 40px; 
+        height: 40px; 
+        margin-right: 10px;
+    }
+
+    .skill-name {
+        color: #d8d4d4; 
+        font-size: 1em;
+        text-align: left; 
+        flex-grow: 1; 
+        font-weight: bold; 
+    }
+
+    .tech-tools-container {
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        margin: 20px 0; 
+    }
+
+    .tech-tools-button {
+        background-color: transparent; /* Make background transparent for the effect */
+        color: #d8d4d4; /* Text color (purple) */
+        padding: 10px 20px;
+        border: 2px solid #174075; /* Border color matching the text (purple) */
+        text-decoration: none; 
+        font-size: 1.1em; 
+        margin: 10px; /* Add margin for spacing */
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+        font-family: 'Montserrat', sans-serif;
+        position: relative; /* Ensure the pseudo-element is positioned correctly */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+    }
+    
+    .tech-tools-button i {
+        margin-right: 10px;
+    }
+    
+    .tech-tools-button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Position for skew effect */
+        transform: skewX(45deg);
+        background-color: #174075; /* Background color for the effect (purple) */
+        z-index: -1; /* Place it behind the button */
+        transition: all 0.5s; /* Smooth transition for width */
+    }
+
+    .tech-tools-button:hover {
+        color: #ffffff; /* Change text color to white on hover */
+        transform: scale(1.05); /* Scale effect */
+    }
+    
+    .tech-tools-button:hover::before {
+        width: 160%; /* Expand background on hover */
+    }
+
+    .services {
+        color: white;
+        position: relative; 
+        z-index: 1; 
+    }
+
+    .services-title {
+        font-size: 5em;
+        margin-left: 350px;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    .services-highlight {
+        color: #174075; 
+    }
+
+    .icon-container {
+        font-size: 3em;
+        color: #174075;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .card-spotlight {
+        --mouse-x: 50%;
+        --mouse-y: 50%;
+        --spotlight-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .card-spotlight::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+    }
+
+    .card-spotlight:hover::before,
+    .card-spotlight:focus-within::before {
+        opacity: 0.6; 
+    }
+
+    .service-card {
+        border-radius: 0.5rem;
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        padding: 2rem;
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .service-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+    }
+
+    .service-card h3 {
+        color: #d8d4d4;
+        transition: color 0.3s;
+    }
+
+    .service-card p {
+        font-size: 1em;
+        line-height: 1.5;
+        color: #bbb8b8;
+        text-align: justify; 
+    }
+
+    .service-button {
+        color: #c9c9c9; 
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid #174075; 
+        padding: 20px; /* Uniform padding */
+        font-size: 13px; /* Font size */
+        cursor: pointer; 
+        font-weight: bold;
+        background: transparent; /* Keep background transparent */
+        position: relative; /* Ensure positioning for the pseudo-element */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+        transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition */
+        width: 120px; 
+        display: flex; /* Use flexbox for centering */
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        margin-left: 10px; 
+        margin-bottom: 10px; 
+    }
+    
+    .service-button i {
+        margin-right: 8px; 
+    }
+    
+    .service-button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Align to the left for skew effect */
+        transform: skewX(45deg); /* Create diagonal effect */
+        background-color: #174075; /* Background color for the effect (purple) */
+        z-index: -1; /* Place it behind the button */
+        transition: width 0.7s ease; /* Smooth transition for width */
+    }
+    
+    .service-button:hover {
+        color: white; /* Change text color to white on hover */
+        background-color: transparent; /* Keep background transparent to show the effect */
+    }
+    
+    .service-button:hover::before {
+        width: 160%; /* Expand background to full width on hover */
+    }
+    
+    .service-button:active {
+        transform: scale(0.95); /* Scale down on active */
+        transition: transform 0.1s; /* Quick transition */
+    }
+
+    /* Projects Section */
+    .projects {
+        padding: 50px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .projects-section {
+        padding: 50px 20px;
+        color: white;
+        text-align: left;
+    }
+
+    .project-title {
+        font-size: 5em;
+        margin-left: 350px;
+        margin-bottom: 60px;
+    }
+
+    .project-highlight {
+        color: #174075; 
+    }
+
+    .project-buttons {
+        margin-top: 20px;
+        margin-bottom: 40px; 
+        text-align: center; /* Center the buttons */
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    .project-button {
+        background-color: transparent; /* Make background transparent for the effect */
+        color: #f3f0f3; /* Text color (purple) */
+        padding: 8px 20px;
+        border: 2px solid #174075; /* Border color matching the text (purple) */
+        text-decoration: none; 
+        font-size: 1.1em;
+        margin: 10px; /* Add margin for spacing */
+        position: relative; /* Ensure positioning for the pseudo-element */
+        overflow: hidden; /* Clip overflow for the pseudo-element */
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase; /* Transform text to uppercase */
+    }
+    
+    .project-button i {
+        margin-right: 6px; /* Adjust icon margin */
+        font-size: 1.5rem; /* Make the icon larger, matching contact button style */
+    }
+    
+    .project-button:hover {
+        color: white; /* Change text color to white on hover */
+        transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+    
+    .project-button::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%; /* Start with no width */
+        top: 0;
+        left: -40px; /* Align to the left for skew effect */
+        transform: skewX(45deg); /* Create diagonal effect */
+        background-color: #174075; /* Background color for the effect (purple) */
+        z-index: -1; /* Place it behind the button */
+        transition: width 0.3s ease; /* Smooth transition for width */
+    }
+    
+    .project-button:hover::before {
+        width: 160%; /* Expand background to full width on hover */
+    }
+    
+    
+    .project-button:hover {
+        color: #ffffff; /* Change text color to white on hover */
+        transform: scale(1.05); /* Scale effect */
+    }
+    
+    
+    .project-button:active {
+        transform: scale(0.95); /* Scale down on active */
+        transition: transform 0.1s; /* Quick transition */
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 20px auto;
+        max-width: 1200px;
+    }
+
+    .project-card {
+        position: relative;
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 40px rgb(1, 1, 12); /* Dark purple shadow from .service-card */
+    }
+    
+    .project-image-container {
+        width: 100%;
+        display: flex; /* Use flex to center the image */
+        justify-content: center; /* Center the image horizontally */
+        padding: 1rem 0; /* Add vertical padding */
+    }
+    
+    
+    .project-image {
+        width: 300px; /* Set width to 100% of the container */
+        height: 170px; /* Set a fixed height of 170px */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        border-radius: 5px; /* Add a 5px border radius */
+    }
+    
+    
+    .project-details {
+        padding: 1rem;
+        position: relative; /* Make it relative for absolute positioning of the text */
+    }
+    
+    .project-name {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        color: #d8d4d4;
+    }
+    
+    .project-description {
+        font-size: 0.8rem;
+        margin: 0.5rem 0 1rem; /* Added bottom margin for more space */
+        color: #bbb8b8; 
+        text-align: justify; 
+    }
+    
+    .tools-used {
+        font-size: 0.9rem; /* Smaller font size */
+        margin: 0.5rem 0;
+        color: #928f8f;
+        display: flex; /* Use flexbox for alignment */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+    
+    .tool-item {
+        display: flex; /* Align the circle and text */
+        align-items: center; /* Center vertically */
+        margin-right: 1rem; /* Space between items */
+        margin-bottom: 0.5rem; /* Space below each item */
+        padding: 0.2rem 0.4rem; /* Reduced padding */
+        border: 1px solid #174075; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+    
+    .tool-circle {
+        width: 8px; /* Smaller circle diameter */
+        height: 8px; /* Smaller circle diameter */
+        border-radius: 50%; /* Make it circular */
+        margin-right: 0.3rem; /* Space between circle and text */
+    }
+    
+    .project-link {
+        display: inline-block;
+        margin-top: 10px;
+        color: #d4d3d3;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+    /* Additional Content Styles */
+    p {
+        font-size: 0.75em;
+        line-height: 1.75em;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .image {
+        width: 330px;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 50px;
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
+    }
+
+    .footer {
+        position: relative; /* Ensure proper positioning for the pseudo-element */
+        background: rgb(68, 68, 68); /* More transparent gradient background */
+        color: rgb(145, 142, 142); /* Text color */
+        text-align: center; /* Center the text */
+        padding: 20px; /* Padding around the text */
+        bottom: 0; /* Align to the bottom */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Include padding in width calculation */
+        margin-top: 20px; /* Space above the footer */
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100px; /* Set a height for the footer */
+    }
+
+    .footer a {
+        color: #ffffff; /* Link color */
+        text-decoration: none; /* Remove underline */
+    }
+
+    .footer a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 6rem; /* Space above the chatbot */
+        right: 1.5rem; /* Closer to the right edge */
+        background-color: transparent; /* Make background transparent */
+        color: #d8d4d4; /* Arrow color */
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        border-radius: 50%; /* Keep it circular */
+        width: 50px; /* Base size */
+        height: 50px; /* Base size */
+        display: none; /* Initially hidden */
+        align-items: center; /* Center content */
+        justify-content: center; /* Center content */
+        text-align: center;
+        font-size: 1.5rem; /* Increase size for thicker arrow */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        z-index: 1000; /* Ensure it's above other content */
+        transition: background-color 0.3s, border-color 0.3s; /* Transition for border color */
+    }
+
+    .chatbot-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 21px;
+        cursor: pointer;
+        z-index: 1000;
+        background-color: rgba(51, 51, 51, 0.8); /* Dark gray with 80% opacity */
+        border-radius: 50%; /* Circular icon */
+        width: 12vw; /* Use viewport width for responsiveness */
+        height: 12vw; /* Use viewport width for responsiveness */
+        max-width: 45px; /* Maximum size */
+        max-height: 45px; /* Maximum size */
+        padding: 5px; /* Keep padding the same or adjust as needed */
+        box-shadow: 0 2px 5px rgba(177, 175, 175, 0.3); /* Optional: add a shadow for depth */
+        display: flex; /* Use flexbox to center the image */
+        align-items: center; /* Center the image vertically */
+        justify-content: center; /* Center the image horizontally */
+    }
+    
+    .chatbot-iframe {
+        display: none; /* Start hidden */
+        position: fixed;
+        bottom: 80px; /* Position above the icon */
+        right: 20px;
+        width: 90vw; /* Use viewport width for responsiveness */
+        height: 70vh; /* Use viewport height for responsiveness */
+        max-width: 400px; /* Maximum size */
+        max-height: 600px; /* Maximum size */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+        z-index: 1000;
+        background-color: white; /* Set background to white */
+        overflow: hidden; /* Hide overflow */
+    }
+    
+    .chatbot-iframe iframe {
+        width: 100%;
+        height: 100%;
+        border: none; /* Remove iframe border */
+        border-radius: 10px; /* Match iframe corners with the outer frame */
+    }
+
+    @keyframes card-enter-animation {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .image-animation {
+        animation: card-enter-animation 0.8s forwards; 
+    }
+
+    .animation-element {
+        position: relative;
+        opacity: 0; /* Start hidden */
+        transform: translateY(20px); /* Start slightly lower */
+        transition: opacity 0.7s ease, transform 0.7s ease; /* Animate opacity and transform */
+    }
+    
+    .animation-element.in-view {
+        opacity: 1; /* Show the element */
+        transform: translateY(0); /* Move to its original position */
+    }
+   
+    
